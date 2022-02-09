@@ -15,6 +15,15 @@ class CreateComicsTable extends Migration
     {
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
+
+            $table->string("title", 100)->unique();
+            $table->text("description");
+            $table->string("thumb")->nullable();
+            $table->float("price", 3, 2);
+            $table->string("series", 80);
+            $table->date("sale_date");
+            $table->string("type", 13);
+            
             $table->timestamps();
         });
     }
