@@ -19,7 +19,7 @@ class CreateComicsTable extends Migration
             $table->string("title", 100)->unique();
             $table->text("description");
             $table->string("thumb")->nullable();
-            $table->float("price", 3, 2);
+            $table->float("price", 4, 2);
             $table->string("series", 80);
             $table->date("sale_date");
             $table->string("type", 13);
