@@ -17,7 +17,7 @@
 
         <div class="form-group">
             <label for="sale_date">Inserisci Data</label>
-            <input type="text" class="form-control" id="sale_date" name="sale_date">
+            <input type="date" class="form-control" id="sale_date" name="sale_date">
         </div>
 
         <div class="form-group">

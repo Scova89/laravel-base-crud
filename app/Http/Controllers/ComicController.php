@@ -42,13 +42,13 @@ class ComicController extends Controller
 
         $newComicBook->title = $data["title"];
         $newComicBook->description = $data["description"];
-        if(!empty($data['thumb'])){
-            $newComicBook->thumb = $data["image"];
-        }
         $newComicBook->price = $data["price"];
         $newComicBook->series = $data["series"];
         $newComicBook->sale_date = $data["sale_date"];
         $newComicBook->type = $data["type"];
+        if(!empty($data['thumb'])){
+            $newComicBook->thumb = $data["thumb"];
+        }
 
         $newComicBook->save();
 
@@ -73,9 +73,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Comic $comic)
     {
-        //
+        return view("comics.edit", compact("comic"));
     }
 
     /**
