@@ -13,18 +13,17 @@
 
         <div class="form-group">
             <label for="series">Inserisci Serie</label>
-            <input type="text" class="form-control" id="series" name="series" value="{{$comic->series}}>
+            <input type="text" class="form-control" id="series" name="series" value="{{$comic->series}}">
         </div>
 
         <div class="form-group">
             <label for="sale_date">Inserisci Data</label>
-            <input type="date" class="form-control" id="sale_date" name="sale_date" value="{{$comic->sale_date}}>
+            <input type="date" class="form-control" id="sale_date" name="sale_date" value="{{$comic->sale_date}}">
         </div>
 
         <div class="form-group">
             <label for="type">Tipo di fumetto</label>
-            <select class="form-control" id='type'
-            name="type">
+            <select class="form-control" id='type' name="type">
                 <option value="comic-book" {{$comic->type == "comic-book" ? "selected":""}}>Comic book</option>
                 <option value="graphic-novel" {{$comic->type == "graphic-novel" ? "selected":""}}>Graphic novel</option>
             </select>
@@ -32,7 +31,7 @@
 
         <div class="form-group">
             <label for="price">Inserisci Prezzo</label>
-            <input type="number" class="form-control" id="price" name="price" value="{{$comic->price}}>
+            <input type="number" class="form-control" id="price" name="price" value="{{$comic->price}}">
         </div>
 
         <div class="form-group">
@@ -42,10 +41,10 @@
 
         <div class="form-group">
             <label for="thumb">Inserisci Immagine</label>
-            <input type="text" class="form-control" id="thumb" name="thumb" value="{{$comic->thumb}}>
+            <input type="text" class="form-control" id="thumb" name="thumb" value="{{$comic->thumb}}">
         </div>
 
-        <button type="submit" class="btn btn-primary">Aggiungi</button>
+        <button type="submit" class="btn btn-primary">Modifica</button>
     </form>
 
     
