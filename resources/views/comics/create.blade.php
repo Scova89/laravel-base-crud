@@ -3,10 +3,21 @@
 @section('pageContent')
     <h1>Aggiungi nuovo fumetto</h1>
 
-    <form>
+    <form action="{{route("comics.store")}}" method="POST">
+        @csrf
         <div class="form-group">
           <label for="title">Inserisci Titolo</label>
           <input type="text" class="form-control" id="title" name="title">
+        </div>
+
+        <div class="form-group">
+            <label for="series">Inserisci Serie</label>
+            <input type="text" class="form-control" id="series" name="series">
+        </div>
+
+        <div class="form-group">
+            <label for="sale_date">Inserisci Data</label>
+            <input type="text" class="form-control" id="sale_date" name="sale_date">
         </div>
 
         <div class="form-group">
