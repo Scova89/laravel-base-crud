@@ -43,7 +43,7 @@ class ComicController extends Controller
         $request->validate([
             "title" => "required|string|unique:comics",
             "description" => "required",
-            "thumb" => "nullable",
+            "thumb" => "nullable|url",
             "price"  => "required",
             "series"  => "required",
             "sale_date"  => "required",
